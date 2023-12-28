@@ -1,5 +1,6 @@
 import Home from "./home/page";
 import { Layout, ServiceCard } from "@/components";
+import PricingPlan from "./plan/page";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           />
         ))}
       </section>
+      <PricingPlan />
     </Layout>
   );
 }

@@ -15,8 +15,8 @@ const animatedImages = [
 
 function Home() {
   return (
-    <main className="flex  p-0 items-center justify-center h-[83vh]">
-      <section className="flex-1">
+    <main className="flex lg:flex-row p-0 items-center justify-center h-[83vh] flex-col">
+      <section className="flex-1 ">
         <div className="flex-1 flex flex-col gap-8">
           <h1 className="font-semibold text-6xl">
             The only hosting theme you ever need to buy!
@@ -26,9 +26,9 @@ function Home() {
             business. Created by a ThemeForest author with over 15 years of
             experience.
           </p>
-          <div className="button_container flex gap-4">
+          <div className="flex flex-col gap-4 lg:flex-row py-4">
             <button className="bg-[var(--primary-dark)] text-white px-14 py-3 rounded-[100px] font-bold">
-              Purchae Hostco
+              Purchase Hostco
             </button>
             <button className="bg-white text-black border-2 px-14 py-3 rounded-[100px] font-bold">
               Explore All Pages
@@ -36,7 +36,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="flex-1 border-2 h-[100%] overflow-hidden bg-grey overflow-y-auto ">
+      <section className="flex-1 border-2 h-[50%] overflow-hidden bg-grey overflow-y-auto ">
         {animatedImages.map((image, index) => (
           <Image
             key={index}
